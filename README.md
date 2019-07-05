@@ -1,5 +1,6 @@
 # GRG_Subway_Check_in_System
 This is description for subway check-in system progress
+go to [here](https://github.com/tuananhvip/GRG_Subway_Check_in_System) for newest detail
 
 # Data transfer detail
 When send control command to serial port of running machine, system will send data to embedded system. Here is commands
