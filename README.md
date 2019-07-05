@@ -9,6 +9,7 @@ This is description for subway check-in system progress
 # What's New?
 
 2019-07-05: First time submit program
+
     - Support 1 to 4 webcam running in one frame
     - Support change webcam position
     - support rotate webcam 180 degree
@@ -36,7 +37,6 @@ Contents:
                   ├── obj.names
                   ├── yolov3-tiny-videos.cfg
                   └── yolov3-tiny-videos.weights
-
     ```
 4. Create running script: `grg-subway.sh`
 5. Compress `subway` folder, copy to running machine
