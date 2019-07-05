@@ -12,9 +12,8 @@ When send control command to serial port of running machine, system will send da
             - N: total number of detected people
             - xi,yi: center point position of detected people, i=0,..n-1
         note: in data frame, contain space for easy debug.
-      examples:
         
-        ```
+      examples:       
         :192:5: 114, 366: 116, 120: 387, 353: 546, 153: 269, 113;\n
         :193:6: 116, 122: 114, 366: 383, 353: 546, 153: 263, 112: 529, 379;\n
         :194:5: 116, 122: 110, 368: 383, 353: 546, 151: 265, 112;\n
@@ -26,7 +25,7 @@ When send control command to serial port of running machine, system will send da
         :200:6: 114, 130: 546, 135: 105, 374: 362, 350: 549, 370: 237, 113;\n
         :201:6: 113, 133: 546, 135: 362, 350: 105, 374: 549, 370: 232, 112;\n
         :202:7: 113, 133: 551, 369: 546, 132:  90, 378: 358, 354: 232, 112: 186, 360;\n
-        ```
+        
 # How to run?
 1. Copy `subway.tar.gz` to "Running machine"
 2. extract here: `tar -xzf subway.tar.gz` or using mouse to extract
