@@ -4,15 +4,15 @@ This is description for subway check-in system progress
 # Data transfer detail
 When send control command to serial port of running machine, system will send data to embedded system. Here is commands
 
-. Start receiving data: `Start;`
-. Stop receiving data:  `Stop;`
-. Data structure: `:I:N:x0,y0:x1,y1: ... :x(n-1),y(n-1);`
-    where:
-        - I: index of data frame
-        - N: total number of detected people
-        - xi,yi: center point position of detected people, i=0,..n-1
-    note: in data frame, contain space for easy debug.
-  examples:
+    . Start receiving data: `Start;`
+    . Stop receiving data:  `Stop;`
+    . Data structure: `:I:N:x0,y0:x1,y1: ... :x(n-1),y(n-1);`
+        where:
+            - I: index of data frame
+            - N: total number of detected people
+            - xi,yi: center point position of detected people, i=0,..n-1
+        note: in data frame, contain space for easy debug.
+      examples:
         
         ```
         :192:5: 114, 366: 116, 120: 387, 353: 546, 153: 269, 113;\n
