@@ -35,7 +35,7 @@ Run: `bash grg-subway.sh` to run program, requring password: __system signin pas
 
 
 # 3. What's New?
-## 2019-07-14: Second time update
+## 2019-07-14: verson 1.1
 ### Feature
     - Add tracking people feature, now each frame, people in one half right area will be track (go from right to left)
     - People pass: it will create 'pass' person when a person go through the center of the doorway
@@ -43,7 +43,7 @@ Run: `bash grg-subway.sh` to run program, requring password: __system signin pas
     
 
 
-## 2019-07-05: First time submit program
+## 2019-07-05: verson 1.0, first time submit program
 ### Feature
 
     - Support 1 to 4 webcam running in one frame
