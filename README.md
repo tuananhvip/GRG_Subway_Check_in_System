@@ -16,14 +16,16 @@ When send control command to serial port of running machine, system will send da
         note: in data frame, contain space for easy debug.
     examples:       
         
-        
+<p>&nbsp;</p>        
 # 2. How to run?
-## prepare program
+## Prepare program
 1. Copy `subway.tar.gz` to "Running machine"
 2. extract here: `tar -xzf subway.tar.gz` or using mouse to extract
 
 ## Run program
 Run: `bash grg-subway.sh` to run program, requring password: __system signin password__
+
+<p>&nbsp;</p>
 
 # 3. What's New?
 ## 2019-07-14: Second time update
