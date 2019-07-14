@@ -5,6 +5,47 @@ go to [here](https://github.com/tuananhvip/GRG_Subway_Check_in_System) for newes
 # Data transfer detail
 When send control command to serial port of running machine, system will send data to embedded system. Here is commands
 
+. Start receiving data: `Start;`
+. Stop receiving data:  `Stop;`
+. Data structure: :I:N:ID0,x0,y0:ID1,x1,y1: ... :ID(n-1),x(n-1),y(n-1);
+    where:
+        - I: index of data frame
+        - N: total number of detected people
+        - IDi: ID tracking person i-th
+        - xi,yi: center point position of detected people, i=0,..n-1
+    note: in data frame, contain space for easy debug.
+examples:       
+        
+        
+# How to run?
+## prepare program
+1. Copy `subway.tar.gz` to "Running machine"
+2. extract here: `tar -xzf subway.tar.gz` or using mouse to extract
+
+## Run program
+Run: `bash grg-subway.sh` to run program, requring password: __system signin password__
+
+# What's New?
+## 2019-07-14: Second time update
+### Feature
+    - Add tracking people feature, now each frame, people in one half right area will be track (go from right to left)
+    - People pass: it will create 'pass' person when a person go through the center of the doorway
+    - Change training mathod: load previous training weight to continues training.
+    
+
+
+## 2019-07-05: First time submit program
+### Feature
+
+    - Support 1 to 4 webcam running in one frame
+    - Support change webcam position
+    - support rotate webcam 180 degree
+    - support send & receive data through serial port
+    - support change serial port parametter
+    
+### Data transfer detail
+When send control command to serial port of running machine, system will send data to embedded system. Here is commands
+
     . Start receiving data: `Start;`
     . Stop receiving data:  `Stop;`
     . Data structure: `:I:N:x0,y0:x1,y1: ... :x(n-1),y(n-1);`
@@ -25,24 +66,8 @@ When send control command to serial port of running machine, system will send da
         :199:6: 115, 127: 108, 371: 368, 350: 546, 136: 241, 113: 549, 371;\n
         :200:6: 114, 130: 546, 135: 105, 374: 362, 350: 549, 370: 237, 113;\n
         :201:6: 113, 133: 546, 135: 362, 350: 105, 374: 549, 370: 232, 112;\n
-        :202:7: 113, 133: 551, 369: 546, 132:  90, 378: 358, 354: 232, 112: 186, 360;\n
-        
-# How to run?
-1. Copy `subway.tar.gz` to "Running machine"
-2. extract here: `tar -xzf subway.tar.gz` or using mouse to extract
-3. Run: `bash grg-subway.sh` to run program, requring password: __system signin password__
+        :202:7: 113, 133: 551, 369: 546, 132:  90, 378: 358, 354: 232, 112: 186, 360;\n    
 
-# What's New?
-
-2019-07-05: First time submit program
-
-    - Support 1 to 4 webcam running in one frame
-    - Support change webcam position
-    - support rotate webcam 180 degree
-    - support send & receive data through serial port
-    - support change serial port parametter
-    
-    
 
 
 # How to build?
