@@ -7,12 +7,15 @@ When send control command to serial port of running machine, system will send da
 
     . Start receiving data: `Start;`
     . Stop receiving data:  `Stop;`
-    . Data structure: :I:N:ID0,x0,y0:ID1,x1,y1: ... :ID(n-1),x(n-1),y(n-1);
+    . Data structure: [STX]:I:N:ID0,x0,y0:ID1,x1,y1: ... :ID(n-1),x(n-1),y(n-1):[CRC16][END]
         where:
             - I: index of data frame
             - N: total number of detected people
             - IDi: ID tracking person i-th
             - xi,yi: center point position of detected people, i=0,..n-1
+            - STX: =0x02, start frame
+            - END: =0x03, end of frame
+            - CRC16: calculate CRC-16 bit for content
         note: in data frame, contain space for easy debug.
     examples:       
         
