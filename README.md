@@ -2,22 +2,22 @@
 This is description for subway check-in system progress
 go to [here](https://github.com/tuananhvip/GRG_Subway_Check_in_System) for newest detail
 
-# Data transfer detail
+# 1. Data transfer detail
 When send control command to serial port of running machine, system will send data to embedded system. Here is commands
 
-. Start receiving data: `Start;`
-. Stop receiving data:  `Stop;`
-. Data structure: :I:N:ID0,x0,y0:ID1,x1,y1: ... :ID(n-1),x(n-1),y(n-1);
-    where:
-        - I: index of data frame
-        - N: total number of detected people
-        - IDi: ID tracking person i-th
-        - xi,yi: center point position of detected people, i=0,..n-1
-    note: in data frame, contain space for easy debug.
-examples:       
+    . Start receiving data: `Start;`
+    . Stop receiving data:  `Stop;`
+    . Data structure: :I:N:ID0,x0,y0:ID1,x1,y1: ... :ID(n-1),x(n-1),y(n-1);
+        where:
+            - I: index of data frame
+            - N: total number of detected people
+            - IDi: ID tracking person i-th
+            - xi,yi: center point position of detected people, i=0,..n-1
+        note: in data frame, contain space for easy debug.
+    examples:       
         
         
-# How to run?
+# 2. How to run?
 ## prepare program
 1. Copy `subway.tar.gz` to "Running machine"
 2. extract here: `tar -xzf subway.tar.gz` or using mouse to extract
@@ -25,7 +25,7 @@ examples:
 ## Run program
 Run: `bash grg-subway.sh` to run program, requring password: __system signin password__
 
-# What's New?
+# 3. What's New?
 ## 2019-07-14: Second time update
 ### Feature
     - Add tracking people feature, now each frame, people in one half right area will be track (go from right to left)
@@ -70,7 +70,7 @@ When send control command to serial port of running machine, system will send da
 
 
 
-# How to build?
+# 4. How to build?
 This part for deverloper only:
 All things to do: `bash 2-run-build.sh`
 
