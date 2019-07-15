@@ -114,7 +114,10 @@ Contents:
 
 
 # 5. Arduino part: How to receive?
-
+<details>
+    <summary>Code arduino demo</summary>
+    <p>
+        
 ```c++
 
 #define LCD_CS A3 // Chip Select goes to Analog 3
@@ -357,3 +360,8 @@ uint16_t crc16_from_string(String buff, size_t size)
 
 
 ```
+
+    </p>
+    </details>  
+
+
