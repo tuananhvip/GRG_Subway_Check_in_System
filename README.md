@@ -371,3 +371,6 @@ uint16_t crc16_from_string(String buff, size_t size)
 </details>  
 
 
+# 6. References
+- [online c++ compiler](https://www.onlinegdb.com/online_c++_compiler)
+- [CRC checker: CRC16-Modbus](http://www.sunshine2k.de/coding/javascript/crc/crc_js.html)
