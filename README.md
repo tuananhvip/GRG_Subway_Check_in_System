@@ -115,8 +115,8 @@ Contents:
 
 # 5. Arduino part: How to receive?
 <details>
-    <summary>Code arduino demo</summary>
-    <p>
+<summary>Code arduino demo</summary>
+<p>
         
 ```c++
 
@@ -361,7 +361,7 @@ uint16_t crc16_from_string(String buff, size_t size)
 
 ```
 
-    </p>
-    </details>  
+</p>
+</details>  
 
 
