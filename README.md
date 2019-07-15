@@ -41,6 +41,10 @@ When send control command to serial port of running machine, system will send da
 ## Run program
 Run: `bash grg-subway.sh` to run program, requring password: __system signin password__
 
+## How to communicate with software?
+From hardware, send "Start;" to Serial port, it will send data out, to stop receive data just send "Stop;"
+
+
 
 <p>&nbsp;</p>
 
@@ -51,6 +55,8 @@ Run: `bash grg-subway.sh` to run program, requring password: __system signin pas
     - Add tracking people feature, now each frame, people in one half right area will be track (go from right to left)
     - People pass: it will create 'pass' person when a person go through the center of the doorway
     - Change training mathod: load previous training weight to continues training.
+    - Send data to Serial Port with Modbus-ASCII like, with CRC checking
+    
     
 
 
